@@ -11,42 +11,109 @@
 <body>
   <header>
     <nav class="container-fluid bg-black fw-bold fs-4 text-center text-light">
-      🦍🦒Zoo Keeper🐅
+      <section class="row">
+        <div class="col-4">
+          🦍🦒Zoo Keeper🐅
+        </div>
+        <div class="col-4">
+          <span>💵<span id="paycheck">0</span></span>
+        </div>
+        <div  class="col-4">
+          <span>💰<span id="money">0</span></span>
+        </div>
+      </section>
     </nav>
   </header>
 
   <main class="container-fluid mt-3">
     <section class="row" id="animal-pens">
-      <div id="Gary" class="col-6 col-md-4">
+      <div id="Gary" class="col-6 col-md-4 mb-5">
         <div class="enclosure">
-          <span class="animal" onclick="feedAnimal('Gary')">
-            🦍
-          </span>
+          <marquee behavior="alternate" direction="up" scrollamount="10">
+            <marquee behavior="alternate" direction="left" scrollamount="9">
+              <span class="animal" onclick="feedAnimal('Gary')">
+                🦍
+              </span>
+            </marquee>
+          </marquee>
         </div>
         <div class="stats bg-black text-light text-center">
           Gary | 100 | 😁
         </div>
       </div>
-      <div id="Larry" class="col-6 col-md-4">
+
+      <div id="Larry" class="col-6 col-md-4 mb-5">
         <div class="enclosure">
+          <marquee behavior="alternate" direction="up" scrollamount="5">
+            <marquee behavior="alternate" direction="left" scrollamount="7">
           <span class="animal" onclick="feedAnimal('Larry')">
             🦒
           </span>
+        </marquee>
+      </marquee>
         </div>
         <div class="stats bg-black text-light text-center">
           Larry | 100 | 😁
         </div>
       </div>
-      <div id="Terry" class="col-6 col-md-4">
+
+      <div id="Terry" class="col-6 col-md-4 mb-5">
         <div class="enclosure">
+          <marquee behavior="alternate" direction="up" scrollamount="11">
+            <marquee behavior="alternate" direction="left" scrollamount="12">
           <span class="animal" onclick="feedAnimal('Terry')">
             🐅
           </span>
+        </marquee>
+      </marquee>
         </div>
         <div class="stats bg-black text-light text-center">
           Terry | 50 | 😁
         </div>
       </div>
+      <div id="Perry" class="col-6 col-md-4 mb-5">
+        <div class="enclosure">
+          <marquee behavior="alternate" direction="up" scrollamount="10">
+            <marquee behavior="alternate" direction="left" scrollamount="9">
+          <span class="animal" onclick="feedAnimal('Perry')">
+            🦜
+          </span>
+        </marquee>
+      </marquee>
+        </div>
+        <div class="stats bg-black text-light text-center">
+          Perry | 100 | 😁
+        </div>
+      </div>
+      <div id="Barry" class="col-6 col-md-4 mb-5">
+        <div class="enclosure">
+          <marquee behavior="alternate" direction="up" scrollamount="13">
+            <marquee behavior="alternate" direction="left" scrollamount="13">
+          <span class="animal" onclick="feedAnimal('Barry')">
+            🐝
+          </span>
+        </marquee>
+      </marquee>
+        </div>
+        <div class="stats bg-black text-light text-center">
+          Barry | 100 | 😁
+        </div>
+      </div>
+      <div id="Jerry" class="col-6 col-md-4 mb-5">
+        <div class="enclosure">
+          <marquee behavior="alternate" direction="up" scrollamount="6">
+            <marquee behavior="alternate" direction="left" scrollamount="4">
+          <span class="animal" onclick="feedAnimal('Jerry')">
+            🦛
+          </span>
+        </marquee>
+      </marquee>
+        </div>
+        <div class="stats bg-black text-light text-center">
+          Jerry | 100 | 😁
+        </div>
+      </div>
+      <audio id="cash-sound" class="d-none" src="cash.wav"></audio>
     </section>
   </main>
   
