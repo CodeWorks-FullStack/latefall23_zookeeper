@@ -52,7 +52,7 @@ function hungerHappens(){
 }
 // Runs the func provided with a delay of milliseconds between
 //We need to pass INSTRUCTIONS to the interval so the interval can call it on it's own
-let hungerInterval = setInterval(hungerHappens, 200)
+let hungerInterval = setInterval(hungerHappens, 2000)
 // clearInterval(hungerInterval) this is how we could stop that interval once it is no longer needed
 
 
@@ -146,7 +146,7 @@ function drawPaycheck(paycheck){
   paycheckElm.innerText = paycheck.toString()
 }
 
-setInterval(getPaid, 5000)
+setInterval(getPaid, 7000)
 
 
 function playCashSound(){
